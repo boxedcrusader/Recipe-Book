@@ -1,0 +1,243 @@
+body {
+    background-color: #dfa67b;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-section {
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.search-link {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.search-bar.active {
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition for input */
+    font-size: 14px; /* Adjust font size */
+}
+
+/* Style for placeholder text */
+.search-input::placeholder {
+    color: #999; /* Adjust placeholder color */
+}
+
+/* Style for search icon */
+.search-icon {
+    height: 30px; /* Adjust icon height */
+    margin: 0 5px; /* Adjust margin as needed */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .search-link {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+    .search-bar {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+    .search-icon {
+        height: 25px; /* Adjust icon height for smaller screens */
+    }
+}
+
+
+
+.header-list ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-list li {
+    margin: 20px;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.book-icon,
+.search-icon {
+    height: 50px;
+}
+
+.main-content {
+    margin-top: 25px; /* Adjust this value according to your header's height */
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: row;
+}
+
+.dessert-image,
+.stew-image,
+.sauce-image {
+    width: 350px;
+    height: auto;
+    display: flex;
+    float: left;
+    margin: 5px;
+    position: relative;
+}
+
+.lasagna-image img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+.dessert-image img,
+.stew-image img,
+.sauce-image img{
+    border-radius: 20px; 
+    width: 100%;
+    height: auto;
+}
+
+strong {
+    color: white;
+}
+
+.desert-text,
+.stew-text,
+.sauce-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.recipe-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.recipe-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.recipe-item h2 {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.recipe-item p {
+    margin: 0;
+    padding: 10px;
+    color: #000;
+}
+
+.recipe-item a {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    min-width: 150px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.recipe-item a:hover {
+    background:#fff;
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        max-width: 90%;
+    }
+    .recipe-item {
+        flex-direction: column;
+    }
+    .dessert-image,
+    .stew-image,
+    .sauce-image {
+        width: 99%;
+        height: auto;
+        display: flex;
+        margin: 5px;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .recipe-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .recipe-item h2 {
+        font-size: 20px;
+        padding: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    } 
+    .recipe-item p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .recipe-item a {
+        width: 100%;
+        text-align: center;
+    }
+}
